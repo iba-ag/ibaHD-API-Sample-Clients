@@ -40,7 +40,7 @@ This code is provided “as is” and serves as an example for the usage of ibaH
 
 ## Where is the documentation for API calls?
 
-The full API documentation can always be found in `C:\Program Files\iba\ibaHD\ibaHD-API\ibaHD-API.proto` when ibaHD-Server is installed. It is readable with any text editor.
+The full API documentation can always be found in `C:\Program Files\iba\ibaHD-Server\ibaHD-API\ibaHD-API.proto` when ibaHD-Server is installed. It is readable with any text editor.
 
 Depending on the programming language, the casing and naming of the fields and messages might slightly differ from the .proto definition as the Protobuf compiler applies language specific code style conventions when generating the client code.
 
@@ -52,7 +52,7 @@ For each language a quick start and a basic tutorial is available on the gRPC we
 
 The steps are similar for all languages:
 
-1. Take the `C:\Program Files\iba\ibaHD\ibaHD-API\ibaHD-API.proto` as input for the code generation
+1. Take the `C:\Program Files\iba\ibaHD-Server\ibaHD-API\ibaHD-API.proto` as input for the code generation
 2. Generate the ibaHD-API client code, usually either by using the `protoc` Protobuf Compiler or other tooling that is referenced in the guide (e.g. [Generate the client and server code for Go](https://grpc.io/docs/languages/go/basics/#generating-client-and-server-code))
 
 3. Add generated code to your project

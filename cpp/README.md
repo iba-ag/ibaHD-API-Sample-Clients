@@ -4,7 +4,7 @@ Before starting with the sample client, make sure the requirements for the serve
 
 For questions about the general usage of the generated gRPC client code, please refer to the [official guide](https://grpc.io/docs/languages/cpp/) for C++.
 
-The full API documentation can always be found in `C:\Program Files\iba\ibaHD\ibaHD-API\ibaHD-API.proto` when ibaHD-Server is installed. It is readable with any text editor.
+The full API documentation can always be found in `C:\Program Files\iba\ibaHD-Server\ibaHD-API\ibaHD-API.proto` when ibaHD-Server is installed. It is readable with any text editor.
 
 ## Sample Client Requirements
 

@@ -4,7 +4,7 @@ Before starting with the sample client, make sure the requirements for the serve
 
 For questions about the general usage of the generated gRPC client code, please refer to the [official guide](https://grpc.io/docs/languages/python/) for Python. 
 
-The full ibaHD-API documentation can always be found in `C:\Program Files\iba\ibaHD\ibaHD-API\ibaHD-API.proto` when ibaHD-Server is installed. It is readable with any text editor.
+The full ibaHD-API documentation can always be found in `C:\Program Files\iba\ibaHD-Server\ibaHD-API\ibaHD-API.proto` when ibaHD-Server is installed. It is readable with any text editor.
 
 ## Sample Client Requirements
 
@@ -29,7 +29,7 @@ The full ibaHD-API documentation can always be found in `C:\Program Files\iba\ib
 
 1. In the `python` folder of the sample clients run:
     ```
-    python -m grpc_tools.protoc -I="C:\Program Files\iba\ibaHD\ibaHD-API" --python_out=. --grpc_python_out=. ibaHD-API.proto
+    python -m grpc_tools.protoc -I="C:\Program Files\iba\ibaHD-Server\ibaHD-API" --python_out=. --grpc_python_out=. ibaHD-API.proto
     ```
 
 **Prepare and run the sample client**

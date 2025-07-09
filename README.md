@@ -22,12 +22,17 @@ This code is provided “as is” and serves as an example for the usage of ibaH
 **Enable and configure ibaHD-API in ibaHD-Server**
 
 1. Enable ibaHD-API
-2. Generate an API key (Only available when user management is enabled)
-3. Generate a TLS server certificate
-4. Export the certificate as PEM format (*.crt, *.key) for usage in the API client
+2. Generate a new TLS server certificate in the CertificateManager
+3. Set the private key password (mandatory)
+4. Enable user authentification for the new certificate
+5. *Optional:* Export the certificate as PEM format for usage in the API client
+6. Select the created certificate as current certificate
 
-![ibaHD_manager](assets/ibaHD_manager.png)
-
+![ibaHD_manager](assets/ibaHD-API_activation_01.png)
+![ibaHD_manager](assets/ibaHD-API_activation_02.png)
+![ibaHD_manager](assets/ibaHD-API_activation_03.png)
+![ibaHD_manager](assets/ibaHD-API_activation_04.png)
+![ibaHD_manager](assets/ibaHD-API_activation_05.png)
 
 
 **Follow the guidelines of the sample clients:**
@@ -48,7 +53,7 @@ Depending on the programming language, the casing and naming of the fields and m
 
 gRPC supports a wide range of languages and platforms, see  [https://grpc.io/docs/languages/](https://grpc.io/docs/languages/).
 
-For each language a quick start and a basic tutorial is available on the gRPC website. Additionally example code matching the tutorials can be found on GitHub(e.g. [Examples for Go](https://github.com/grpc/grpc-go))
+For each language a quick start and a basic tutorial is available on the gRPC website. Additionally, example code matching the tutorials can be found on GitHub (e.g. [Examples for Go](https://github.com/grpc/grpc-go))
 
 The steps are similar for all languages:
 
@@ -58,9 +63,9 @@ The steps are similar for all languages:
 3. Add generated code to your project
 4. Reference the gRPC base libaries to your project (e.g. [Additional imports for Go](https://github.com/grpc/grpc-go/blob/4e8458e5c63864a0216745133b894869c37d9883/examples/route_guide/client/client.go#L32))
 
-5. For the client code to work the following data must be set in the gRPC/ibaHD-API client:
-   - IP/Hostname of the machine + Port of the ibaHD-API server (default port is 9003, configurable in ibaHD manager)
-   - API Key (If user management is enabled)
+5. For the client code to work, the following data must be set in the gRPC/ibaHD-API client:
+   - IP/Hostname of the machine + Port of the ibaHD-API server (default port is 9003, configurable in ibaHD Manager)
+   - API Key (if user management is enabled)
    - TLS certificate (usually in PEM format)
 
 **Additional documentation**

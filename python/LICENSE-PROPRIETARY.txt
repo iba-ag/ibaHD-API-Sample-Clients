@@ -1,0 +1,6 @@
+Proprietary License
+
+Copyright (c) 2025 iba AG
+
+This software, except where otherwise stated, is proprietary.
+For full license details, see https://www.iba-ag.com/de/license-agreement.
